@@ -1,0 +1,72 @@
+.friend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.friend .friend__avatar {
+  width: 50px;
+  border-radius: 37%;
+}
+
+.friend__avatar .g-avatar {
+  widows: 70px;
+}
+.friend__avatar.m-avatar {
+  width: 60px;
+}
+
+.friend .friend__column {
+  display: flex;
+  align-items: center;
+}
+
+.friend .friend__avatar {
+  margin-right: 15px;
+}
+
+.friend__content .friend__name {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.friend__content .friend__status, /*이 텍스틑 오직 friend화면에만 적용된다*/
+.firend__content .friend__bottom-text, /*이 텍스트는 오직 Chat화면에만 적용되는 부분이다.*/
+.friend .chat__timestamp {
+  opacity: 0.6;
+}
+
+.firend__content .friend__bottom-text {
+  font-size: 14px;
+}
+
+.firend__content .friend__status,
+.friend .chat__timestamp {
+  font-size: 12px;
+}
+
+.friend .friend__now-listening {
+  border: 2px solid #52e084;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+  /* 여기에 opacity를 주게되면 데두리에도 적용 되기 떄문에 span에 줘야하함 */
+}
+
+.friend__now-listening span {
+  opacity: 0.7;
+}
+
+.friend__now-listening i {
+  font-size: 12px;
+}
+
+.friend__add-btn {
+  display: flex;
+  padding: 10px 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}

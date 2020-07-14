@@ -1,0 +1,54 @@
+.nav {
+  position: fixed; /*(element를 sticky하게 만들어준다.)position 은 width랑 height가 필요하다.*/
+  width: 100%; /*position을 사용할 시 무조건 width를 설정해줘야한다.  기본적으로 position:fixed는 element를 기존 다른 것들에서 부터 떼어내서. 다른 레이어에 올려놔야 한다.*/
+  background-color: #fcfcfc;
+  padding: 20px 50px;
+  bottom: 0px;
+  left: 0px;
+  border-top: 1px solid #f7f7f7;
+}
+
+.nav .nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav i {
+  font-size: 20px;
+}
+
+.nav .nav__list-link {
+  position: relative; /*여기가 이게 아니라면. badge는 body에 대해서 position: absolute를 가질건데 우리는 
+  .nav .nav__list-link라는 부모요소에 position:relative를 해줘야한다. message icon에 대해서 positioning되야한다. */
+}
+
+.nav .nav__badge {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  font-size: 10px;
+  color: white;
+  background-color: #dc5d46;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+@keyframes showNavBar {
+  form {
+    transform: translateX(80px); /*애니메이션이 바로 시작 되게 하지 않을거다. */
+  }
+  to {
+    transform: none;
+  }
+}
+
+.nav {
+  transform: translateY(80px);
+  animation: showNavBar 0.5s ease-out forwards;
+  animation-delay: 0.5s;
+}
