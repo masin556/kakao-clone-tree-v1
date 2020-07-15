@@ -3,14 +3,16 @@
   z-index: 2; /*#top이 갑자기 안보일때 보통 이런 일이 layer의 순서인 z-index를 확인 할때 일어난다. */
   top: 0px;
   width: 100%;
-  padding: 10px 0px;
-  background-color: white;
+  padding: 30px 0px;
+  box-shadow: 0 30px 60px -12px rgba(34, 34, 51, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3),
+    0 -12px 36px -8px rgba(50, 50, 93, 0.025);
 }
 
 .chat__body {
   padding: 10px 0px;
   padding-top: 200px;
-  min-height: 100000px;
+  min-height: 900px;
 }
 /* }<!--기본값으로 chats-body에body에 패딩을 없애기 위해   --> */
 .chats-body .header,
@@ -19,8 +21,7 @@
 }
 
 .chats-body {
-  background-image: url("../images/chatBg.png");
-  min-height: 1000vh; /*이게 하는 일은 chat class가 적용된 div에 viewport의 100%높이를 주는것이다, viewport는 screen */
+  min-height: 900vh; /*이게 하는 일은 chat class가 적용된 div에 viewport의 100%높이를 주는것이다, viewport는 screen */
 }
 
 .chat__write--container {

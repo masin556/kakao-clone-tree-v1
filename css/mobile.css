@@ -4,7 +4,9 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #fec006;
+  background-image: url("../images/backBg2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,8 +20,19 @@
   z-index: 4;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .bigScreen {
     display: flex;
   }
+}
+
+.bigScreen__text {
+  font-family: neo;
+  color: #fb4264;
+  font-size: 9vw;
+  line-height: 9vw;
+  text-shadow: 0 0 3vw #f40a35;
+}
+.a_style:hover {
+  text-shadow: 0 0 0.1em, 0 0 0.3em;
 }

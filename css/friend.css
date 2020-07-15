@@ -9,11 +9,37 @@
   border-radius: 37%;
 }
 
+.friend .friend__avatar1 {
+  width: 30px;
+  border-radius: 37%;
+  position: relative;
+  top: 10px;
+  left: -10px;
+}
+
+.friend .friend__avatar2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 37%;
+}
+
+.friend .friend__avatar3 {
+  width: 40px;
+  height: 40px;
+  border-radius: 37%;
+}
+
 .friend__avatar .g-avatar {
   widows: 70px;
 }
 .friend__avatar.m-avatar {
   width: 60px;
+}
+
+.friend__column2 {
+  display: flex;
+  align-items: center;
+  padding: 20px 0px;
 }
 
 .friend .friend__column {
@@ -38,7 +64,7 @@
 }
 
 .firend__content .friend__bottom-text {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .firend__content .friend__status,
